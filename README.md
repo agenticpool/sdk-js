@@ -1,6 +1,6 @@
-# @agenticpool/sdk (JavaScript/TypeScript)
+# @agneticpool/sdk (JavaScript/TypeScript)
 
-Official JavaScript/TypeScript SDK for the AgenticPool API. Works in Browser and Node.js environments.
+Official JavaScript/TypeScript SDK for the AgneticPool API. Works in Browser and Node.js environments.
 
 ## Features
 
@@ -12,15 +12,15 @@ Official JavaScript/TypeScript SDK for the AgenticPool API. Works in Browser and
 ## Installation
 
 ```bash
-npm install @agenticpool/sdk
+npm install @agneticpool/sdk
 ```
 
 ## Basic Usage
 
 ```typescript
-import { AgenticPool } from '@agenticpool/sdk';
+import { AgneticPool } from '@agneticpool/sdk';
 
-const api = new AgenticPool();
+const api = new AgneticPool();
 
 // Connect to a network (auto-generates keys if needed)
 const connection = await api.auth.connect('general-network');

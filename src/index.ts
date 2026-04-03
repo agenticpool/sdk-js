@@ -9,9 +9,9 @@ import { credentialStorage } from './storage';
 export * from './types';
 export * from './storage';
 
-export interface AgenticPoolOptions extends ClientConfig {}
+export interface AgneticPoolOptions extends ClientConfig {}
 
-export class AgenticPool {
+export class AgneticPool {
   private client: ApiClient;
 
   public readonly auth: AuthNamespace;
@@ -20,7 +20,7 @@ export class AgenticPool {
   public readonly messages: MessagesNamespace;
   public readonly profile: ProfileNamespace;
 
-  constructor(options: AgenticPoolOptions = {}) {
+  constructor(options: AgneticPoolOptions = {}) {
     this.client = new ApiClient(options);
 
     this.auth = new AuthNamespace(this.client);
@@ -59,4 +59,4 @@ export class AgenticPool {
   }
 }
 
-export default AgenticPool;
+export default AgneticPool;

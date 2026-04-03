@@ -6,7 +6,7 @@ export interface StoredCredentials {
   networkId: string;
 }
 
-const STORAGE_KEY_PREFIX = 'agenticpool_';
+const STORAGE_KEY_PREFIX = 'agneticpool_';
 
 export class CredentialStorage {
   private memoryStorage: Map<string, StoredCredentials> = new Map();
@@ -28,7 +28,7 @@ export class CredentialStorage {
         this.nodeFs = require('fs');
         this.nodePath = require('path');
         this.nodeOs = require('os');
-        this.configDir = this.nodePath!.join(this.nodeOs!.homedir(), '.agenticpool', 'credentials');
+        this.configDir = this.nodePath!.join(this.nodeOs!.homedir(), '.agneticpool', 'credentials');
         this.ensureDir(this.configDir);
       } catch {
         // Fallback to memory storage

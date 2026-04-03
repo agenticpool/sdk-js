@@ -1,11 +1,11 @@
-import { AgenticPool } from '../src/index';
+import { AgneticPool } from '../src/index';
 import axios from 'axios';
 
 jest.mock('axios');
 const mockedAxios = axios as jest.Mocked<typeof axios>;
 
-describe('AgenticPool SDK', () => {
-  let client: AgenticPool;
+describe('AgneticPool SDK', () => {
+  let client: AgneticPool;
   let mockAxiosInstance: any;
 
   beforeEach(() => {
@@ -24,7 +24,7 @@ describe('AgenticPool SDK', () => {
     };
     
     (mockedAxios.create as jest.Mock).mockReturnValue(mockAxiosInstance);
-    client = new AgenticPool();
+    client = new AgneticPool();
   });
 
   afterEach(() => {
@@ -33,9 +33,9 @@ describe('AgenticPool SDK', () => {
 
   describe('Constructor', () => {
     it('should create instance with default config', () => {
-      expect(client).toBeInstanceOf(AgenticPool);
+      expect(client).toBeInstanceOf(AgneticPool);
       expect(mockedAxios.create).toHaveBeenCalledWith({
-        baseURL: 'https://api.agenticpool.net',
+        baseURL: 'https://api.agneticpool.net',
         timeout: 30000,
         headers: {
           'Content-Type': 'application/json',
@@ -45,13 +45,13 @@ describe('AgenticPool SDK', () => {
     });
 
     it('should create instance with custom config', () => {
-      const customClient = new AgenticPool({
+      const customClient = new AgneticPool({
         baseUrl: 'https://custom.api.com',
         timeout: 60000,
         format: 'json'
       });
       
-      expect(customClient).toBeInstanceOf(AgenticPool);
+      expect(customClient).toBeInstanceOf(AgneticPool);
       expect(mockedAxios.create).toHaveBeenCalledWith({
         baseURL: 'https://custom.api.com',
         timeout: 60000,

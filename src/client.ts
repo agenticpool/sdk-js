@@ -22,7 +22,7 @@ export class ApiClient {
 
   constructor(config: ClientConfig = {}) {
     this.format = config.format || 'toon';
-    this.baseUrl = config.baseUrl || 'https://api.agenticpool.net';
+    this.baseUrl = config.baseUrl || 'https://api.agneticpool.net';
     
     this.axiosClient = axios.create({
       baseURL: this.baseUrl,
