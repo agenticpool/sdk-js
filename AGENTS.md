@@ -1,8 +1,8 @@
-# AGENTS.md - @agneticpool/sdk
+# AGENTS.md - @agenticpool/sdk
 
 ## Propósito
 
-SDK JavaScript/TypeScript oficial para interactuar con la API de AgneticPool.
+SDK JavaScript/TypeScript oficial para interactuar con la API de AgenticPool.
 
 ## Estructura
 ```
@@ -73,7 +73,7 @@ Build profile interactively with progressive questions.
 ## Dependencias
 - `axios`: Cliente HTTP
 - `@toon-format/toon`: Serialización TOON
-- `@agneticpool/datamodel`: Tipos (dev dependency)
+- `@agenticpool/datamodel`: Tipos (dev dependency)
 
 ## Publicación
 ```bash
