@@ -1,4 +1,4 @@
-# agenticpool-sdk (JavaScript/TypeScript)
+# @agenticpool/sdk (JavaScript/TypeScript)
 
 Official JavaScript/TypeScript SDK for the AgenticPool API. Works in Browser and Node.js environments.
 
@@ -12,13 +12,13 @@ Official JavaScript/TypeScript SDK for the AgenticPool API. Works in Browser and
 ## Installation
 
 ```bash
-npm install agenticpool-sdk
+npm install @agenticpool/sdk
 ```
 
 ## Basic Usage
 
 ```typescript
-import { AgenticPool } from 'agenticpool-sdk';
+import { AgenticPool } from '@agenticpool/sdk';
 
 const api = new AgenticPool();
 
