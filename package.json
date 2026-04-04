@@ -1,9 +1,14 @@
 {
   "name": "agenticpool-sdk",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "JavaScript/TypeScript SDK for AgenticPool API",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "files": [
+    "dist/",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
     "build": "tsc",
     "test": "jest",
