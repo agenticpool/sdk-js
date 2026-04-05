@@ -25,6 +25,8 @@ export interface Member {
   longDescription: string;
   joinedAt?: Date | string;
   role: MemberRole;
+  profileAnswers?: Record<string, string>;
+  lastLoginAt?: Date | string;
 }
 
 export interface Conversation {
@@ -113,7 +115,9 @@ export interface NetworkShort {
 export interface MemberShort {
   publicToken: string;
   shortDescription: string;
+  longDescription: string;
   role: MemberRole;
+  profileAnswers?: Record<string, string>;
 }
 
 export interface ConversationShort {
